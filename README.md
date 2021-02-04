@@ -2,7 +2,7 @@
 Spring 2021
 
 ## Description of this repo's contents
-Storing all shared materials related to OCN 390 here, including a course overview (below), lecture slides, documentation, and information regarding the sensor development project itself [Sensor-Dev](./Sensor-Dev)
+Storing all shared materials related to OCN 390 here, including a course overview (below), lecture slides, documentation, and information regarding the sensor development project itself: [Sensor-Dev/README.md](./Sensor-Dev/README.md)
 
 ## Overview
 This class isn’t as much about learning about our planet as it is about learning about how we learn about our planet. That is, what tools do oceanographers use in order to study and describe what they are learning about the ocean. 
