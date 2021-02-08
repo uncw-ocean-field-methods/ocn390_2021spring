@@ -21,7 +21,3 @@ Adalogger
 
 
      The Adalogger is a piece of hardware that acts as a data reader. Essentially, it’s a sensor board for field studies that, at its core, can save data and then export it to other equipment/technologies via USB. The board itself has multiple pins, in which sensors can be attached to, that produce voltage changes- and can then be read as data through the analog(read) command. The Senseair K-30 is what actually senses the CO2. The Adalogger also has internal and external power source capabilities; which makes it favorable for field work.
-
-
-
-
