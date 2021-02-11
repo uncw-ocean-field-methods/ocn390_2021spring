@@ -1,4 +1,4 @@
-Team submissions from first assignment&emdash;component descriptions
+Team submissions from first assignment&mdash;component descriptions
 
 # Adalogger
 
