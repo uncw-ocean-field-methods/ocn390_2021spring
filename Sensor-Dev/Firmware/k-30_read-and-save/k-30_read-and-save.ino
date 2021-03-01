@@ -50,7 +50,9 @@ void loop() {
   // Poll sensor: UART K-30 comms
   sendRequest(readCO2);
   unsigned long valCO2 = getValue(response);
-  Serial.println(valCO2);
+  Serial.print(valCO2);
+  Serial.print(", seconds elapsed = ");
+  Serial.println(millis()/1000);
   
   // Open the file: SPI SD comms
   File dataFile = SD.open("K30_0000.txt", FILE_WRITE);
@@ -72,7 +74,7 @@ void loop() {
 
 void sendRequest(byte packet[]){
   while(!Serial1.available()) { //keep sending request until we start to get a response  
-    Serial.println("waiting for Software.serial port availability");
+//    Serial.println("waiting for Software.serial port availability");
     Serial1.write(readCO2,7);
     delay(50); 
   }
