@@ -68,7 +68,8 @@ df_strava.index = df_strava.index.tz_localize(None)
 
 #%% Plot current data
 fig, axs = plt.subplots()
-axs.plot(df_CO2.index, df_CO2['CO2 (ppm)'], 'ko')
+axs.plot(df_CO2.index, df_CO2['CO2 (ppm)'], 'ko-')
+axs.plot(df_CO2.index[0::5], df_CO2['CO2 (ppm)'][0::5], 'ro-')
 axs.set_xlabel('Time (UTC)')
 axs.set_ylabel('CO2 (ppm)')
 axs.set_title('CO2 vs. Time')
@@ -76,8 +77,8 @@ fig.autofmt_xdate()
 
 # Plot timestamps only to see if they align
 fig, axs = plt.subplots()
-axs.plot(df_CO2.index, df_CO2.index, 'k.', label = 'K-30')
-axs.plot(df_strava.index, df_strava.index, 'r.', label = 'Strava')
+axs.plot(df_CO2.index, df_CO2.index, 'k.-', label = 'K-30')
+axs.plot(df_strava.index[0::5], df_strava.index[0::5], 'r.', label = 'Strava')
 fig.legend()
 
 #%% Merge CO2 and Strava Data
